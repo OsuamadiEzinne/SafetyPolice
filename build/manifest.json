@@ -1,0 +1,24 @@
+{
+  "manifest_version": 2,
+
+  "name": "Safe Buddy",
+  "description": "This extension informs the user that the information they are providing is sensitive for certain input fields",
+  "version": "0.0.1",
+
+  "browser_action": {
+    "default_popup": "index.html",
+    "default_title": "Safe Buddy"
+  },
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+   "permissions": ["tabs", ["<all_urls>"]],
+   "web_accessible_resources" : ["https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js", "https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"],
+   "content_security_policy": "script-src 'self' 'unsafe-eval';  object-src 'none'"
+}

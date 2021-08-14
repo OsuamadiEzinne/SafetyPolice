@@ -1,0 +1,2 @@
+(this.webpackJsonpsafebuddy=this.webpackJsonpsafebuddy||[]).push([[0],{14:function(e,t,n){},21:function(e,t,n){"use strict";n.r(t);n(0);var o=n(2),s=n.n(o),r=(n(14),n(38)),i=n(4),a=function(e){return Object(i.jsx)("div",{children:"password"===e.type?Object(i.jsx)(r.a,{title:"You are about to type your password",children:e.element}):Object(i.jsx)(r.a,{title:"You are about to type sensitive information",children:e.element})})};s.a.render(Object(i.jsx)(a,{}),document.getElementById("root"))}},[[21,1,2]]]);
+//# sourceMappingURL=main.e37260d1.chunk.js.map
